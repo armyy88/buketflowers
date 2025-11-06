@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  background: #ffb6c1;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.navbar .container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .logo {
+  font-weight: 600;
+  color: white;
+}
+.navbar nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+}
+.navbar nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  background: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?w=1600') center/cover no-repeat;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+.hero-content {
+  background-color: rgba(0,0,0,0.4);
+  padding: 30px;
+  border-radius: 10px;
+}
+.hero h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+.hero p {
+  margin-bottom: 20px;
+}
+.btn {
+  background: #ff69b4;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+.btn:hover {
+  background: #ff1493;
+}
+
+/* Produk */
+.produk {
+  padding: 60px 20px;
+  text-align: center;
+}
+.produk-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+.produk-item {
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 15px;
+  background: #fff;
+  transition: transform 0.3s;
+}
+.produk-item:hover {
+  transform: translateY(-5px);
+}
+.produk-item img {
+  width: 100%;
+  border-radius: 10px;
+}
+.produk-item h3 {
+  margin: 10px 0 5px;
+}
+.produk-item p {
+  color: #ff1493;
+  font-weight: 600;
+}
+
+/* FAQ */
+.faq {
+  padding: 60px 20px;
+  background: #fff0f5;
+}
+.faq h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+.faq-item {
+  max-width: 800px;
+  margin: 15px auto;
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* Privacy */
+.privacy {
+  padding: 60px 20px;
+  text-align: center;
+  background: #fafafa;
+}
+.privacy p {
+  max-width: 800px;
+  margin: 10px auto;
+  line-height: 1.6;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #ffb6c1;
+  color: white;
+}
